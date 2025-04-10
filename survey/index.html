@@ -1,0 +1,47 @@
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width= device width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <body>
+    <h1 id=title><strong>Survey Form</strong></h1>
+    <p id=description><em>Thanks for taking the time to answer our questions.</em></p>
+    <div>
+    <form id="survey-form">
+      <label for="name">Full Name: <input id="name" name="full-name" type="text" placeholder="Enter your name" required/></label>
+      <label for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>     
+      <label id="email-label">Alternate Email (optional): <input id="email-label" name="alt-email" type="email" placeholder= "Enter alternate email" /></label>
+      <hr></hr>
+      <label>Age: <input id="number" type="number" min="16" max="60" placeholder="Age" required/></label>
+      <label id="name-label">State: <input id="name-label" name="state" type="text" placeholder="e.g. Washington" required/></label>
+      <label id="number-label">Work Expreience: <input id="number-label" name="work-exp" type="number" min="0" placeholder= "(in years)"/></label></label>
+      <label>Gender: 
+        <select id="dropdown" name="gender" required>
+          <option>(select one)</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+          <option>Prefer not to say<option>
+        </select>
+      </label>
+      <hr></hr>
+      <legend>Previous work background:</legend>
+        <label><input type="radio" name="work-bg" value="yes" class="inline"> Tech</label>
+        <label><input type="radio" name="work-bg" value="no" class="inline" checked> Non-Tech</label>
+      <legend>Customer Experience:
+        <label><input type="checkbox" value="0" class="inline" checked> No experience</label>
+        <label><input type="checkbox" value="1a" class="inline">Attended courses</label>
+        <label><input type="checkbox" value="1b" class="inline">Self-taught</label>
+        <label><input type="checkbox" value="2" class="inline">Did other job</label>
+        <label><input type="checkbox" value="3" class="inline">Has anger management classes</label>
+      </legend>
+      <hr></hr>
+      <label>Why do you want to be a Walmart cashier?<textarea placeholder="I want to be a Walmart cashier because..." rows="4"></textarea></label>
+      <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

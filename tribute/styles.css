@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #f5f6f7;
+}
+
+
+img-div{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#image > img {align: center}
